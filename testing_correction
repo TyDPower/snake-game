@@ -141,12 +141,12 @@ class Game:
                 elif event.type == QUIT:
                     running = False
 
-        try:
-            self.play()
-        except Exception as e:
-            self.show_game_over()
+            try:
+                self.play()
+            except Exception as e:
+                self.show_game_over()
 
-            time.sleep(.2)
+             time.sleep(.2)
 
 if __name__ == '__main__':
     game = Game()
